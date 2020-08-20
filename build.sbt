@@ -9,8 +9,6 @@ resolvers += Resolver.sonatypeRepo("snapshots")
 libraryDependencies ++= Seq(
 
 "com.twitter" %% "finatra-http" % "20.8.0",
-// logging
-"com.twitter" %% "twitter-server-slf4j-log4j12" % "20.6.0",
 // testing
 "com.twitter" %% "finatra-http" % "20.8.0" % "test" classifier "tests"
 )
