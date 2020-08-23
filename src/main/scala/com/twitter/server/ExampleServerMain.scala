@@ -14,12 +14,12 @@ object ExampleServerMain extends ExampleServer
 
 class ExampleServer extends HttpServer {
 
-	val service = new Service[Request, Response] {
-	    def apply(request: Request) = {
-	      val response = Response(request.version, Status.Ok)
-	      response.contentString = "hello"
-	      Future.value(response)
-	    }
+    val service = new Service[Request, Response] {
+        def apply(request: Request) = {
+          val response = Response(request.version, Status.Ok)
+          response.contentString = "hello"
+          Future.value(response)
+        }
   }
 
   override def configureHttp(router: HttpRouter): Unit = {
