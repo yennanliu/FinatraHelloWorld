@@ -4,10 +4,8 @@ package com.twitter.server
 
 import com.twitter.finatra.http.HttpServer
 import com.twitter.finatra.http.routing.HttpRouter
-
 import com.twitter.finagle.{Http, Service}
 import com.twitter.finagle.http.{Request, Response, Status}
-import com.twitter.server.TwitterServer
 import com.twitter.util.{Await, Future}
 
 object ExampleServerMain extends ExampleServer
