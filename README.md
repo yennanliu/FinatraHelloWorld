@@ -1,6 +1,6 @@
 # FinatraHelloWorld
-// Build REST API via Scala via Finatra framework
-// Finatra is an API framework build based on TwitterServer
+> Build REST API via Scala via Finatra framework
+> Finatra is an API framework build based on TwitterServer
 
 ### Quick start
 ```bash
