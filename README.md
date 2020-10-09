@@ -15,3 +15,5 @@ curl localhost:8888
 
 ### Ref
 - https://twitter.github.io/finatra/index.html
+- Finatral tutorial
+	- https://shekhargulati.com/2017/09/14/finatra-tutorial-building-scalable-services-the-twitter-way/
