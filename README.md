@@ -1,6 +1,6 @@
 # FinatraHelloWorld
-> Build REST API via Scala via Finatra framework
-> Finatra is an API framework build based on TwitterServer
+> - Build REST API via Scala via Finatra framework
+> - Finatra is an API framework build based on TwitterServer
 
 ### Quick start
 ```bash
@@ -12,6 +12,8 @@ sbt run
  
 curl localhost:8888
 ```
+- Check the API : http://localhost:8888/ or http://localhost:8888/hello
+- Check the admin page : http://localhost:9990/admin
 
 ### Build 
 ```bash
@@ -23,6 +25,8 @@ sbt assembly
 ```bash
 
 ```
+
+### Development
 
 ### Ref
 - https://twitter.github.io/finatra/index.html
