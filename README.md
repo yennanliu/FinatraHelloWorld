@@ -4,7 +4,10 @@
 
 ### Quick start
 
-- Get API
+<details>
+<summary>Quick start</summary>
+
+- Get API : [FitmanApp2.scala](https://github.com/yennanliu/FinatraHelloWorld/blob/master/src/main/scala/com/twitter/server/FitmanApp2.scala)
 ```bash
 sbt run
 # Multiple main classes detected, select one to run:
@@ -17,7 +20,7 @@ curl localhost:8888
 - Check the API : http://localhost:8888/ or http://localhost:8888/hello
 - Check the admin page : http://localhost:9990/admin
 
-- Post API
+- Post API : [FitmanApp4.scala](https://github.com/yennanliu/FinatraHelloWorld/blob/master/src/main/scala/com/twitter/server/FitmanApp4.scala)
 ```bash
 curl -X POST -H "Content-Type: application/json" \
     -d '{ "id": 999, "name": "JACK"}' \
@@ -26,6 +29,7 @@ curl -X POST -H "Content-Type: application/json" \
 # response
 # ----> Hello JACK with id 999
 ```
+</details>
 
 ### Build 
 ```bash

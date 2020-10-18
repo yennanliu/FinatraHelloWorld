@@ -1,5 +1,7 @@
 package com.twitter.server
 
+// https://twitter.github.io/finatra/user-guide/http/requests.html
+
 import com.twitter.finagle.http.Request
 import com.twitter.finatra.http.routing.HttpRouter
 import com.twitter.finatra.http.{Controller, HttpServer}
