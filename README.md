@@ -7,21 +7,21 @@
 <details>
 <summary>Quick start</summary>
 
-- Get API : [FitmanApp2.scala](https://github.com/yennanliu/FinatraHelloWorld/blob/master/src/main/scala/com/twitter/server/FitmanApp2.scala)
+#### Get API : [FitmanApp2.scala](https://github.com/yennanliu/FinatraHelloWorld/blob/master/src/main/scala/com/twitter/server/FitmanApp2.scala)
 ```bash
-sbt run
-# Multiple main classes detected, select one to run:
-
-#  [1] com.twitter.server.BasicServer
-#  [2] com.twitter.server.ExampleServerMain
+sbt assembly
+java -cp target/scala-2.11/finatrahelloworld_2.11-1.0.jar com.twitter.server.FitmanApp2
  
 curl localhost:8888
 ```
 - Check the API : http://localhost:8888/ or http://localhost:8888/hello
 - Check the admin page : http://localhost:9990/admin
 
-- Post API : [FitmanApp4.scala](https://github.com/yennanliu/FinatraHelloWorld/blob/master/src/main/scala/com/twitter/server/FitmanApp4.scala)
+#### Post API : [FitmanApp4.scala](https://github.com/yennanliu/FinatraHelloWorld/blob/master/src/main/scala/com/twitter/server/FitmanApp4.scala)
 ```bash
+sbt assembly
+java -cp target/scala-2.11/finatrahelloworld_2.11-1.0.jar com.twitter.server.FitmanApp4
+
 curl -X POST -H "Content-Type: application/json" \
     -d '{ "id": 999, "name": "JACK"}' \
    localhost:8080/hi
