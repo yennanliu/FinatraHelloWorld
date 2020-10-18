@@ -3,6 +3,8 @@
 > - Finatra is an API framework build based on TwitterServer
 
 ### Quick start
+
+- Get API
 ```bash
 sbt run
 # Multiple main classes detected, select one to run:
@@ -14,6 +16,16 @@ curl localhost:8888
 ```
 - Check the API : http://localhost:8888/ or http://localhost:8888/hello
 - Check the admin page : http://localhost:9990/admin
+
+- Post API
+```bash
+curl -X POST -H "Content-Type: application/json" \
+    -d '{ "id": 999, "name": "JACK"}' \
+   localhost:8080/hi
+
+# response
+# ----> Hello JACK with id 999
+```
 
 ### Build 
 ```bash
