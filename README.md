@@ -11,8 +11,6 @@
 ```bash
 sbt assembly
 java -cp target/scala-2.11/finatrahelloworld_2.11-1.0.jar com.twitter.server.FitmanAppGet
- 
-curl localhost:8888
 ```
 - Check the API : http://localhost:8080/wazzup or http://localhost:8080/hello
 - Check the admin page : http://localhost:9990/admin
@@ -34,7 +32,6 @@ curl -X POST -H "Content-Type: application/json" \
 ```bash
 sbt assembly
 java -cp target/scala-2.11/finatrahelloworld_2.11-1.0.jar com.twitter.server.FitmanAppRedirect
- 
 ```
 - Check the API : http://localhost:8080/foo   (`/foo` will redirect to `/bar`)
 
@@ -47,11 +44,10 @@ sbt assembly
 ```
 
 ### Run 
-```bash
-
-```
+- dev
 
 ### Development
+- dev
 
 ### Ref
 - https://twitter.github.io/finatra/index.html
