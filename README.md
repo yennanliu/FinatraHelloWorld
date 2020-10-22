@@ -14,7 +14,7 @@ java -cp target/scala-2.11/finatrahelloworld_2.11-1.0.jar com.twitter.server.Fit
  
 curl localhost:8888
 ```
-- Check the API : http://localhost:8080/wazzup or http://localhost:8088/hello
+- Check the API : http://localhost:8080/wazzup or http://localhost:8080/hello
 - Check the admin page : http://localhost:9990/admin
 
 #### Post API : [FitmanAppPost.scala](https://github.com/yennanliu/FinatraHelloWorld/blob/master/src/main/scala/com/twitter/server/FitmanAppPost.scala)
@@ -29,6 +29,15 @@ curl -X POST -H "Content-Type: application/json" \
 # response
 # ----> Hello JACK with id 999
 ```
+
+#### Redirect API : [FitmanAppRedirect.scala](https://github.com/yennanliu/FinatraHelloWorld/blob/master/src/main/scala/com/twitter/server/FitmanAppRedirect.scala)
+```bash
+sbt assembly
+java -cp target/scala-2.11/finatrahelloworld_2.11-1.0.jar com.twitter.server.FitmanAppRedirect
+ 
+```
+- Check the API : http://localhost:8080/foo   (`/foo` will redirect to `/bar`)
+
 </details>
 
 ### Build 
