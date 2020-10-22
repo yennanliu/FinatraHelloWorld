@@ -9,7 +9,7 @@ import com.twitter.finagle.http.Request
 import com.twitter.finatra.http.routing.HttpRouter
 import com.twitter.finatra.http.{Controller, HttpServer}
 
-object FitmanApp2 extends FitmanServer2
+object FitmanAppGet extends FitmanServer2
 
 class FitmanServer2 extends HttpServer {
   override protected def defaultHttpsPort: String = ":8080"
