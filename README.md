@@ -11,6 +11,8 @@
 ```bash
 sbt assembly
 java -cp target/scala-2.11/finatrahelloworld_2.11-1.0.jar com.twitter.server.FitmanAppGet
+# test API
+curl http://localhost:8080/wazzup
 ```
 - Check the API : http://localhost:8080/wazzup or http://localhost:8080/hello
 - Check the admin page : http://localhost:9990/admin
@@ -19,11 +21,10 @@ java -cp target/scala-2.11/finatrahelloworld_2.11-1.0.jar com.twitter.server.Fit
 ```bash
 sbt assembly
 java -cp target/scala-2.11/finatrahelloworld_2.11-1.0.jar com.twitter.server.FitmanAppPost
-
+# test API
 curl -X POST -H "Content-Type: application/json" \
     -d '{ "id": 999, "name": "JACK"}' \
    localhost:8080/hi
-
 # response
 # ----> Hello JACK with id 999
 ```
@@ -32,8 +33,20 @@ curl -X POST -H "Content-Type: application/json" \
 ```bash
 sbt assembly
 java -cp target/scala-2.11/finatrahelloworld_2.11-1.0.jar com.twitter.server.FitmanAppRedirect
+# test API
+curl http://localhost:8080/foo
 ```
 - Check the API : http://localhost:8080/foo   (`/foo` will redirect to `/bar`)
+
+#### Json Patch API (dev) : [FitmanAppJSONPatchRequests.scala](https://github.com/yennanliu/FinatraHelloWorld/blob/master/src/main/scala/com/twitter/server/FitmanAppJSONPatchRequests.scala)
+```bash
+sbt assembly
+java -cp target/scala-2.11/finatrahelloworld_2.11-1.0.jar com.twitter.server.FitmanAppJSONPatchRequests
+# test API
+curl -X PATCH -H "Content-Type:application/json-patch+json" \
+    -d '{"op":"copy","from":"/fruit","path":"/veggie"}' \
+   localhost:8080/jsonPatch
+```
 
 </details>
 
