@@ -7,6 +7,8 @@
 <details>
 <summary>Quick start</summary>
 
+## Basics
+
 #### Get API : [FitmanAppGet.scala](https://github.com/yennanliu/FinatraHelloWorld/blob/master/src/main/scala/com/twitter/server/FitmanAppGet.scala)
 ```bash
 sbt assembly
@@ -46,6 +48,30 @@ java -cp target/scala-2.11/finatrahelloworld_2.11-1.0.jar com.twitter.server.Fit
 curl -X PATCH -H "Content-Type:application/json-patch+json" \
     -d '{"op":"copy","from":"/fruit","path":"/veggie"}' \
    localhost:8080/jsonPatch
+```
+
+## Advanced
+
+#### Post-advanced API : [FitmanAppPostAdvanced.scala](https://github.com/yennanliu/FinatraHelloWorld/blob/master/src/main/scala/com/twitter/server/FitmanAppPostAdvanced.scala)
+```bash
+sbt assembly
+java -cp target/scala-2.11/finatrahelloworld_2.11-1.0.jar com.twitter.server.FitmanAppPostAdvanced
+# test API
+curl -X POST -H "Content-Type: application/json" \
+    -d '{ "sth": sth}' \
+   localhost:8080/1.1/foo
+
+curl localhost:8080/1.1/appendMultiplePrefixed
+
+curl localhost:8080/1.1/freestyleWithHeader
+
+curl -X POST -H "Content-Type: application/json" \
+-d '{ "x": 100}' \
+localhost:8080/post_basic/plus_100
+
+curl -X POST -H "Content-Type: application/json" \
+-d '{ "x": 100, "y":88}' \
+localhost:8080/post_basic/sum
 ```
 
 </details>
