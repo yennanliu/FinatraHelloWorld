@@ -74,7 +74,7 @@ curl -X POST -H "Content-Type: application/json" \
 localhost:8080/post_basic/sum
 ```
 
-## Test api via python
+#### Test via python
 ```bash
 python api/run.py --httpRequest get --endPoint http://localhost:8080/hello
 python api/run.py --httpRequest get --endPoint http://localhost:8080/1.1/plaintext

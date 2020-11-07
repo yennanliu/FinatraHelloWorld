@@ -41,7 +41,14 @@ libraryDependencies ++= Seq(
   "org.scalacheck" %% "scalacheck" % "1.13.4" % "test",
   "org.scalatest" %% "scalatest" % "3.0.0" % "test",
   "org.specs2" %% "specs2-mock" % "2.4.17" % "test",
-  "com.twitter" %% "finatra-http" % "20.8.0" % "test" classifier "tests"
+  "com.twitter" %% "finatra-http" % "20.8.0" % "test" classifier "tests",
+
+  // click (DB library)
+  "com.typesafe.slick" %% "slick" % "3.0.0",
+  "org.slf4j" % "slf4j-nop" % "1.6.4",
+
+  // sqlite jdbc
+  "org.xerial" % "sqlite-jdbc" % "3.7.2"
 )
 
 
