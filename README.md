@@ -76,9 +76,11 @@ localhost:8080/post_basic/sum
 
 #### Test via python
 ```bash
+sbt assembly
+java -cp target/scala-2.11/finatrahelloworld_2.11-1.0.jar com.twitter.server.FitmanAppPostAdvanced
+
 python api/run.py --httpRequest get --endPoint http://localhost:8080/hello
 python api/run.py --httpRequest get --endPoint http://localhost:8080/1.1/plaintext
-
 ```
 
 </details>
