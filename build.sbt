@@ -42,6 +42,11 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.0" % "test",
   "org.specs2" %% "specs2-mock" % "2.4.17" % "test",
   "com.twitter" %% "finatra-http" % "20.8.0" % "test" classifier "tests",
+  "org.scalactic" %% "scalactic" % "3.2.0",
+  "org.scalatest" %% "scalatest" % "3.2.0" % "test",
+  "org.scalatest" %% "scalatest-funsuite" % "3.2.0" % "test",
+  "org.scalatest" %% "scalatest-propspec" % "3.2.0" % "test",
+  "org.scalatest" %% "scalatest-featurespec" % "3.2.0" % "test",
 
   // click (DB library)
   "com.typesafe.slick" %% "slick" % "3.0.0",
