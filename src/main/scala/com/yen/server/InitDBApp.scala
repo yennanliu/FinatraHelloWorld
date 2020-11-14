@@ -29,7 +29,7 @@ class HelloController extends Controller {
 }
 
 class DBController extends Controller {
-  get("/db_init") { _:  Request =>
+  get("/db_init") { _: Request =>
     val db_runner = new DBRunner
     val setupFuture = db_runner.db.run(db_runner.setup)
     "init DB !"
@@ -37,7 +37,7 @@ class DBController extends Controller {
 }
 
 class DBDeleter extends Controller {
-  get("/db_delete") { _:  Request =>
+  get("/db_delete") { _: Request =>
     val deleteCommand = "rm db/coffees.db"
     val output = deleteCommand.!!
     "delete DB !"
