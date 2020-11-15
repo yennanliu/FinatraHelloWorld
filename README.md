@@ -101,3 +101,7 @@ sbt assembly
 - https://twitter.github.io/finatra/index.html
 - Finatral tutorial
 	- https://shekhargulati.com/2017/09/14/finatra-tutorial-building-scalable-services-the-twitter-way/
+
+- Slick doc
+	- Typesafe‘s modern database query and access library for Scala
+	- http://scala-slick.org/doc/3.0.0/supported-databases.html
