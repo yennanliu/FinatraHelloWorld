@@ -2,7 +2,7 @@ package utils
 
 // https://scala-slick.org/doc/1.0.1/introduction.html#what-is-slick
 
-import schema.SqlLiteSchema.Coffees
+import schema.CoffeeSchema.Coffees
 import slick.driver.SQLiteDriver.api._
 
 import scala.concurrent.Await

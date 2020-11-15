@@ -3,7 +3,7 @@ package schema
 import scala.concurrent.ExecutionContext.Implicits.global
 import slick.driver.SQLiteDriver.api._
 
-object SqlLiteSchema {
+object CoffeeSchema {
 
   // Sehema : Definition of the SUPPLIERS table
   class Suppliers(tag: Tag) extends Table[(Int, String, String, String, String, String)](tag, "SUPPLIERS") {
@@ -28,5 +28,4 @@ object SqlLiteSchema {
     // A reified foreign key relation that can be navigated to create a join
     //def supplier = foreignKey("SUP_FK", supID, supplier)(_.id)
   }
-
 }

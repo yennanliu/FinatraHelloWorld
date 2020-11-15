@@ -1,6 +1,6 @@
 package services
 
-import schema.SqlLiteSchema.{Coffees, Suppliers}
+import schema.CoffeeSchema.{Coffees, Suppliers}
 import slick.driver.SQLiteDriver.api._
 
 object SQLiteRunner {
